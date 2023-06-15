@@ -1,0 +1,152 @@
+body {
+    background-image: url(assests/bg-img.png);
+    background-color: #ebecf0;
+    color: #14303f;
+}
+
+h1 {
+    margin: 15px auto;
+    font-size: 3.5em;
+}
+
+
+.title-container {
+    font-family: 'Space Grotesk', Helvetica, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.sound-container {
+    font-family: 'Space Grotesk', Helvetica, sans-serif;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.cafe-section {
+    background-color: #b4b9c5;
+    background-image: url(assests/bg-img.png);
+    border-radius: 50%;
+
+    opacity: 0.3;
+    
+}
+
+
+.rain-section {
+    background-color: #b4b9c5;
+    background-image: url(assests/bg-img.png);
+    border-radius: 50%;
+
+    opacity: 0.3;
+}
+
+.fire-section {
+    background-color: #b4b9c5;
+    background-image: url(assests/bg-img.png);
+    border-radius: 50%;
+
+    opacity: 0.3;
+}
+
+.temple-section {
+    background-color: #b4b9c5;
+    background-image: url(assests/bg-img.png);
+    border-radius: 50%;
+
+    opacity: 0.3;
+}
+
+
+.cafe-section,
+.rain-section,
+.fire-section,
+.temple-section {
+    flex: 1 0 35%; /* Each section takes 35% width on meduim screens */
+    max-width: 40%; /* Set maximum width to 40% on meduim screens */
+
+    padding: 20px; /* Add padding within each section */
+    margin: 20px;
+
+
+}
+
+
+@media screen and (min-width: 913px) {
+    .cafe-section,
+    .rain-section,
+    .fire-section,
+    .temple-section {
+        flex: 1 0 20%; 
+        /* Each section takes 20% width on larger screens */
+        max-width: 25%; 
+        /* Set maximum width to 25% on larger screens */
+    }
+    h1 {
+        margin: 50px auto;
+        font-size: 6em;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .sound-container {
+        justify-content: center;
+        /* set item centered */
+    }
+    .cafe-section,
+    .rain-section,
+    .fire-section,
+    .temple-section {
+        flex: 1 0 100%; 
+        /* Each section takes 25% width on smaller screens */
+        max-width: 45%; 
+        /* Set smaller width to 40% on smaller screens */
+
+    }
+
+    h1 {
+        margin: 20px 0px 2px 0px;
+        font-size: 2.5em;
+    }
+
+}
+
+.cafe-section img,
+.rain-section img,
+.fire-section img,
+.temple-section img {
+    width: 100%;
+    height: auto;
+}
+
+
+/* slider style */
+
+input[type="range"] {
+    appearance: none;
+    background: linear-gradient(to right, #9AC5F4, #0E2954);
+    outline: none;
+  }
+
+.slider {
+    width: 100%;
+    cursor: grab;
+    /* Set the track color */
+    border-radius: 20px; 
+
+  }
+
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%; 
+    background: #4F709C;
+    border: 2px solid #F5F0BB;
+}
+
