@@ -1,5 +1,5 @@
 # study-zone
-
+## Create your own quiet world to study
 <p> study with ambient noise </p>
   <br>
 <p> customise your study zone </p>
